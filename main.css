@@ -1,0 +1,246 @@
+nav,body,ul,ol,li,p, h1,h2,div,article,footer,header{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:"Times New Roman", Arial;
+	color:black;
+	background-color: linen;
+}
+
+#container{
+	width:96%;
+	max-width:1000px;
+	margin:auto;
+	}
+	
+/*  MMU logo in header  */
+header img{
+	float:center;
+	display:inline; /* remove later, has no effect  */
+	width:100px ;
+	height:100px ;
+
+	
+}
+ 
+/*  Header  */
+header {
+	color:black;
+	background-color:#fff; /* white background colour  */
+	margin-bottom:20px; /* adds space between header and content in the container   */
+	overflow:hidden;
+	padding:40px;
+	width:100%;
+	float:center;
+	text-align:center;
+	
+
+}
+
+/* Footer  */
+Footer{
+	background-color:#fff; /* white background colour  */
+	width:100%;
+	margin-top:15px;
+	overflow:hidden; /*  prevents spillage of background colour   */
+	padding:35px 35px;
+	text-align:center;
+	
+}
+
+/* Nav bar Heading */
+	
+h1{
+	display:inline; /* displays h1 inline with the MMU logo in the header   */
+	font-size:3.4em;
+}
+	
+/* paragraph on the header       */
+header p{
+	font-size:1.3em;
+	margin-top:10px;
+}
+
+/* About me Header */
+#container h2{
+	background-color:#ff5722; /* Orange Background colour  */
+	overflow:hidden;
+	border-radius:5px;
+	padding:10px 20px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+	
+	
+/* Nav Bar*/
+nav ul{
+	list-style-type:none;
+	overflow:hidden; /*useful when the background is here*/
+	background-color:#f3f3f3; /* light gray background colour  */
+	border-radius:5px;
+}
+
+nav li a{
+	padding:15px 15px ;
+	text-decoration:none;
+	text-align:center;
+	padding-right:15px;
+	color:black;
+	display:block;
+}
+
+nav li{
+	float:left;
+	border-right:1px solid white;
+	
+}
+
+nav li:last-child {
+    border-right: none; /* removes last border on the right  */
+}
+
+/* changes the colour of the links when you hover over it    */
+nav li a:hover {
+    background-color: #555; /* background colour changes gray */
+    color: white;
+}
+
+/* changes colour of curent page on the nav bar */
+nav .active {
+    background-color: #ff5722; /* The background of the current page on Nav Bar changes orange   */
+    color: white;
+}
+
+
+
+/*  Bullet points  */
+ul.Skills{
+	list-style-position:inside;  /*  puts the bullet points inside the paragraph    */
+}
+
+/*  Main content in Home Page */
+#container .Programming, .MainText .WorkExperience{
+	background-color:#2196f378; /* light blue background colour */
+	border-radius:5px;
+	padding:30px 20px;
+	width:900px;
+	margin-top:15px;	/*  Top margin added   */
+	float:left;
+	border: 1px solid black;
+}
+
+/*  Images inside the sections called Programming   */
+#container .Programming img{
+	width:889px;
+	max-width:100%; /* Allows image to be lower than the actual size   */
+	height:533px;
+	float:left;
+	margin-top:5%; /* adds space on top of the image  */
+}
+
+/*   Home page h4 top margin to separate Into and Personal Development */
+.MainText h4{
+	margin-top: 35%; /* adds space above h4 to separate the content   */
+}
+
+
+#container  table{
+	width:200px; /*  remove styling in workexperience page */
+	margin-top:10%; /* adds space between the tables */
+}
+
+/*  Main content in Home Page */
+#container section  {
+	/*background-color:#2196f378; /* light blue background colour  */
+	border-radius:5px; /* adds round edges on border  */
+	padding:30px 20px;
+	width:600px;
+	margin-top:5px;
+	float:left;
+	
+/*	border: 1px solid black;*/
+}
+
+/*  sub header for each section    */
+h4{
+	border-top:1px solid black; /*  puts top border on h4 to separate the content  */
+}
+
+
+/* Picture of me   */
+#container img{
+	float:left;
+	width:50%;
+	height:450px;
+	margin-right: 2%; /* adds small space between text and the image  */
+}
+
+/*  aside contains qualifications    */
+aside{
+	float:right;
+	width:280px; /* sets width that fits into container      */
+	background-color:#2196f378; /*-- light blue background colour */
+	border:1px solid black;
+	border-radius:5px;
+	margin-top:15px; /*  positions aside online with content   */
+}
+.WebDesign{
+	float:right;
+	width:350px; /* sets width that fits into container      */
+	padding:12px 12px;
+	border:1px solid black;
+	border-radius:5px;
+	margin-top:15px; /*  positions aside online with content   */
+}
+
+/*   header inside the aside   */
+aside h3 {
+	background-color:#ff5722 ; /* Orange Background colour */
+	margin-top:0px; /* positions header at the top of the border   */
+	text-align:center;
+	border:1px;
+	border-radius:5px;
+	padding:5px 5px;
+}
+
+/* Qualification tables */
+table,th,td{
+	border:1px solid black;
+	text-align:left;
+	background-color:white;
+	border-collapse: collapse;
+	margin-left: 14px; /* positions table inside the aside   */
+}
+
+/*  Changes the backgroung colour of the headings to black */
+table th{
+	background-color:black;
+	color:white;
+	text-align:left;
+}
+
+/*  media, commment on media queries */
+
+/* Media query for phones */
+ @media only screen and (min-width: 400px) and (max-width: 800px) {
+nav, nav li{
+    width:100%;
+  }
+  
+
+#container img,#container .Programming img, header img {
+	max-width:100%;
+	height:auto;
+
+  }
+  
+#container .Programming{
+  width:100%;
+  }
+.Qualification{
+    width:95%; /* ensures that the aside width changes depending on the screen size */
+	float:left; /* floats to the left when the screen size is reduced  */
+  }
+}
